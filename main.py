@@ -9,13 +9,16 @@ def print_hi(name):
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
-def calculate_sum(x, y):
-    return x + y
+class Calculator:
 
+    @staticmethod
+    def sum(x, y):
+        return x + y
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
     print("Hello world!")
-    print(calculate_sum(10, 12))
+    calc = Calculator()
+    print(calc.sum(10, 12))
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
